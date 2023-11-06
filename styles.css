@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "cabinet";
+    src: url(./Assets/Fonts/CabinetGrotesk-Regular.ttf);
+}
+@font-face {
+    font-family: "ruth";
+    src: url(./Assets/Fonts/RuthlessWreckin2.ttf);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 110vh;
+    font-size: 19px;
+}
+main {
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+header {
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 auto;
+   
+}
+header {
+    display: flex;
+    align-items: center;
+}
+header .logo{
+    font-family: "ruth";
+    font-size: 1.5rem;
+    
+}
+header .logo a{
+    color: black;
+}
+header .logo .red{
+    color: rgb(245, 35, 98);
+}
+header .logo .cyan{
+    color: rgb(20, 172, 231);
+}
+header .logo .orange{
+    color: rgb(255, 141, 100);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "cabinet";
+    font-size: 19px;
+}
+
+header .nav-link{
+    padding: 10px 25px;
+    border-radius: 40px;
+    transition: 0.25s ease;
+}
+header .nav-link:hover{
+    background-color: rgb(255, 141, 100);
+}
+
+header .first{
+   background-color: rgb(255, 141, 100);
+   color: white;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li{
+    padding: 0 40px;
+   
+}
+
+header nav ul li a{
+   color: black; 
+}
+header nav ul li a:hover{
+   color:white; 
+}
+.barmenu {  
+    height: 30px;
+    width: 30px;
+    /* display: none; */
+}
+.barmenu .menu, .barmenu::before, .barmenu::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 25px;
+    background-color: rgb(255, 141, 100);
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.heroContainer .left h1 {
+    font-size: 4rem;
+    background: -webkit-linear-gradient(45deg, rgb(245, 35, 98)0%, rgb(20, 172, 231)10%,rgb(255, 141, 100)80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+
+}
+.heroContainer .left {
+    width: 100%;
+    height:100%;
+    margin-top: 200px;
+    max-width: 800px;
+    font-family:"cabinet";
+   
+     
+}
+
+.heroContainer .right img {
+    width: 100%;
+    max-width: 800px;
+    height: 1000px;
+    object-fit: cover;
+
+}
+
+
+
+
+
+
