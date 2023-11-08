@@ -350,6 +350,7 @@ header nav ul li a:hover{
     .nav2 {
         font-family: "cabinet";
         font-size: 19px;
+        display: block;
         background-color: #ff8d64de;
         height: 100%;
         width: 100%;
@@ -363,7 +364,6 @@ header nav ul li a:hover{
         transition: 0.4s;
         z-index: 98;
         opacity: 0;
-        overflow-y: visible;
         display: initial;
         
 
