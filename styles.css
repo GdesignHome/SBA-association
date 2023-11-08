@@ -20,13 +20,14 @@ body {
     width: 100%;
     min-height: 110vh;
     font-size: 19px;
+    transition: 0.25s;
 }
 main {
     width: 100%;
     max-width: 90%;
     height: 100%;
     margin: 0 auto;
-
+    
 }
 
 header {
@@ -35,17 +36,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    margin: 0 auto;
+    padding: 10px 0;
+    margin: auto;
+    position: sticky ;
+    top: 0;
+    z-index: 99;
    
 }
 header {
     display: flex;
     align-items: center;
+
 }
 header .logo{
     font-family: "ruth";
     font-size: 1.5rem;
+    background-color: white;
+    border-radius: 0 40px 40px 40px;
+    padding: 10px;
+    z-index: 99;
     
 }
 header .logo a{
@@ -99,19 +108,60 @@ header nav ul li a:hover{
    color:white; 
 }
 .barmenu {  
-    height: 30px;
-    width: 30px;
-    /* display: none; */
+    height: 35px;
+    width: 35px;
+    display: none;
 }
-.barmenu .menu, .barmenu::before, .barmenu::after {
+
+.barmenu::before {
     content: "";
     display: block;
-    height: 5px;
-    width: 25px;
-    background-color: rgb(255, 141, 100);
-    border-radius: 3px;
-    margin-top: 5px;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(245, 35, 98);
+    border-radius: 2px;
+    margin-bottom: 6px;
+    transition: 0.4s;
 }
+.barmenu::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 141, 100);
+    border-radius: 2px;
+    /* margin-top: 6px; */
+    transition: 0.4s;
+}
+.barmenu .bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(20, 172, 231);
+    border-radius: 2px;
+    margin-bottom: 6px;
+    transition: 0.4s;
+    z-index:99;
+}
+
+.barmenu.active::before {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    background-color: black;
+}
+.barmenu.active::after {
+    transform: rotate(45deg) translate(-7px, -6px);
+    background-color: rgb(20, 172, 231)
+}
+
+.barmenu.active .bar {
+    opacity: 0;
+}
+
+.nav2 {
+    display: none;
+}
+
+
 
 .hero {
     width: 100%;
@@ -151,6 +201,363 @@ header nav ul li a:hover{
 }
 
 
+.btn {
+    margin-top: 120px;
+    margin-left: 350px;
+    
+}
+.btn button {
+    position: absolute;
+    font-family: 'cabinet';
+    font-size: 20px;
+    padding: 12px 30px;
+    border-radius: 40px;
+    background-color: rgb(20, 172, 231);
+    border: none;
+    color: white;
+    transition: 0.25s;
+    
+}
+
+.btn button:hover {
+    background-color: rgb(255, 141, 100);
+    scale:1.2;
+
+} 
+
+
+
+
+
+/* /* RESPONSIVE ACCEUIL *--------------------------------------------------------------*/
+
+
+/* 2xl */
+@media (max-width:1629px){
+    .heroContainer .left h1{
+        font-size: 3.5rem;
+
+    }
+    .heroContainer .left{
+        max-width: 500px !important;
+        transition: 0.25s;
+        
+    }
+
+    .btn {
+        margin-left: 280px;
+        
+    }
+}
+@media (max-width:1536px){
+    header nav ul li{
+        padding: 0 20px;
+        transition: 0.25s;
+       
+    }
+    
+    .heroContainer .right img {
+        height: 800px;
+        transition: 0.25s;
+    }
+    .heroContainer .left{
+        max-width: 450px !important;
+        transition: 0.25s;
+       
+    }
+    .heroContainer .left h1{
+        font-size: 3rem;
+
+    }
+}
+/* xl */
+@media (max-width:1280px){
+    header nav ul li{
+        padding: 0 2px;
+        transition: 0.25s;
+       
+    }
+
+    .btn {
+        margin-left: 200px;
+        
+    }
+}
+/* lg */
+@media (max-width:1171px){
+    .heroContainer .right img {
+        height: 600px;
+        transition: 0.25s;
+    }
+
+    .heroContainer .left h1{
+        font-size: 2.5rem;
+
+    }
+    .heroContainer .left{
+        max-width: 350px !important;
+        transition: 0.25s;
+    
+    }
+}
+@media (max-width:1024px){
+    header nav ul li{
+        padding: 0;
+        transition: 0.25s;
+       
+    }
+    .heroContainer .left{
+        max-width: 300px !important;
+        transition: 0.25s;
+    
+    }
+    .heroContainer .left h1{
+        font-size: 2rem;
+
+    }
+
+    .heroContainer .right img {
+        height: 580px;
+        transition: 0.25s;
+    }
+    .barmenu{
+        display: inline-block;
+        z-index: 99;
+        
+    }
+    header nav {
+        display: none;
+        
+    }
+    header.active {
+        background-color: transparent !important;
+    }
+  
+
+    .nav2.active {
+        opacity: 1;
+        left: 0;
+    
+    }
+
+    .nav2 {
+        font-family: "cabinet";
+        font-size: 19px;
+        background-color: #ff8d64de;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 100%;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        text-align: center;
+        padding-top:170px;
+        transition: 0.4s;
+        z-index: 98;
+        opacity: 0;
+        overflow-y: visible;
+        display: initial;
+        
+
+        
+    }
+    
+    .nav2 a {
+        display: block;
+        color: rgb(255, 255, 255);
+        background-color: #ed8059;
+        padding: 15px;
+        width:100%;
+        max-width:250px;
+        margin-bottom: 50px !important;
+        margin: 0 auto;
+    }
+    
+    .nav2 a:hover {
+        background-color: #fd7f50;
+    }
+
+    .btn {
+        margin-left: 130px;
+        margin-top: 20px;
+        
+    }
+    .btn button{
+        font-size: 16px;
+        padding: 10px 20px;
+       
+        
+    }
+
+}
+/* md */
+@media (max-width:840px){
+    .heroContainer .left{
+        max-width: 250px !important;
+        transition: 0.25s;
+    
+    }
+    .heroContainer .left h1{
+        font-size: 1.5rem;
+
+    }
+
+    .heroContainer .right img {
+        height: 550px;
+        transition: 0.25s;
+    }
+    .btn {
+        margin-left: 0;
+        
+        
+    }
+}
+
+
+@media (max-width:768px){
+    .heroContainer .left{
+        max-width: 250px !important;
+        transition: 0.25s;
+    
+    }
+    .heroContainer .left h1{
+        font-size: 1.5rem;
+
+    }
+
+    .heroContainer .right img {
+        height: 400px;
+        transition: 0.25s;
+    }
+}
+
+
+/* sm */
+@media (max-width:640px){
+    heroContainer .right img {
+        height: 350px;
+        transition: 0.25s;
+    }
+
+    .heroContainer .left{
+        max-width: 100px !important;
+        margin-top: 150px;
+        transition: 0.25s;
+    }
+    
+    .heroContainer .left h1{
+        font-size: 1rem;
+        text-align: end;  
+
+    }
+
+    header .logo {
+        font-size: 18px;
+        transition: 0.25s;
+    }
+}
+
+
+/* xs */
+@media (max-width:475px){
+
+    .heroContainer {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .heroContainer .left{
+        max-width: 400px !important;
+        margin-top: 40px;
+        transition: 0.25s;
+        text-align: center;
+       
+    }
+
+      .heroContainer .left h1{
+        font-size: 16px;
+        text-align: center;  
+
+    }
+
+    .barmenu {
+        scale: 0.6;
+    }
+
+    .heroContainer .right {  
+        margin-left: 35px;
+
+    }
+    .heroContainer .right img{  
+        height: 450px;
+        transition: 0.25s;
+
+    }
+    .btn  {
+        position: fixed;
+        bottom: 170px;
+        width: 100%;
+        right: 70px;
+        
+        
+    }
+    .btn button{
+        /* font-size: 16px;
+        padding: 10px 20px; */
+       
+        
+    }
+
+   
+
+    
+}
+@media (max-width:390px){
+
+    .heroContainer .right img{  
+        height: 300px;
+        transition: 0.25s;
+
+    }
+
+    header .logo {
+        font-size: 14px;
+        transition: 0.25s;
+    }
+
+    .btn  {
+        bottom: 270px;
+        right: 50px;
+       
+        
+        
+    }
+
+
+}
+
+@media (max-width:284px){
+    .heroContainer .right img{  
+        height: 230px;
+        transition: 0.25s;
+
+    }
+
+    header .logo {
+        font-size: 10px;
+        transition: 0.25s;
+    }
+
+    .btn  {
+        bottom: 350px;
+        right: 50px;
+       
+        
+        
+    }
+
+}
 
 
 
