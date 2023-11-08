@@ -327,64 +327,7 @@ header nav ul li a:hover{
         height: 580px;
         transition: 0.25s;
     }
-    .barmenu{
-        display: inline-block;
-        z-index: 99;
-        
-    }
-    header nav {
-        display: none;
-        
-    }
-    header.active {
-        background-color: transparent !important;
-    }
-  
-
-    .nav2.active {
-        opacity: 1;
-        left: 0;
-    
-    }
-    .nav2.scroll {
-
-    }
-
-    .nav2 {
-        font-family: "cabinet";
-        font-size: 19px;
-        display: block;
-        background-color: #ff8d64de;
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        left: 100%;
-        right: 0;
-        top: 0;
-        margin: 0 auto;
-        text-align: center;
-        padding-top:170px;
-        transition: 0.4s;
-        z-index: 98;
-        opacity: 0;
-        display: initial;
-         
-    }
-    
-    .nav2 a {
-        display: block;
-        color: rgb(255, 255, 255);
-        background-color: #ed8059;
-        padding: 15px;
-        width:100%;
-        max-width:250px;
-        margin-bottom: 50px !important;
-        margin: 0 auto;
-    }
-    
-    .nav2 a:hover {
-        background-color: #fd7f50;
-    }
+   
 
     .btn {
         margin-left: 130px;
@@ -396,6 +339,12 @@ header nav ul li a:hover{
         padding: 10px 20px;
        
         
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        transition: 0.25s;
     }
 
 }
@@ -438,6 +387,10 @@ header nav ul li a:hover{
         height: 400px;
         transition: 0.25s;
     }
+    header nav {
+        scale:0.8;
+    }
+  
 }
 
 
@@ -476,6 +429,69 @@ header nav ul li a:hover{
 
 
 /* xs */
+@media (max-width:586px){
+
+        header {
+            display: flex;
+            flex-direction: row;
+        }
+        header nav{
+            display: none;
+        }
+        .barmenu{
+        display: inline-block;
+        z-index: 99;
+        
+    }
+  
+    header.active {
+        background-color: transparent !important;
+    }
+  
+
+    .nav2.active {
+        opacity: 1;
+        left: 0;
+    
+    }
+   
+
+    .nav2 {
+        font-family: "cabinet";
+        font-size: 19px;
+        display: block;
+        background-color: #ff8d64de;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 100%;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        text-align: center;
+        padding-top:170px;
+        transition: 0.4s;
+        z-index: 98;
+        opacity: 0;
+        display: initial;
+         
+    }
+    
+    .nav2 a {
+        display: block;
+        color: rgb(255, 255, 255);
+        background-color: #ed8059;
+        padding: 15px;
+        width:100%;
+        max-width:250px;
+        margin-bottom: 50px !important;
+        margin: 0 auto;
+    }
+    
+    .nav2 a:hover {
+        background-color: #fd7f50;
+    }
+}
 @media (max-width:475px){
 
     .heroContainer {
