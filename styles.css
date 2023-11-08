@@ -533,11 +533,17 @@ header nav ul li a:hover{
     }
     
     .btn2 {
+       
         display: inline-block;
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
         margin-top: 120px;
-        margin-left: 100px;
+        margin-right:43px ;
+    
         
     }
+
     .btn2 button {
         font-family: 'cabinet';
         font-size: 16px;
@@ -574,7 +580,7 @@ header nav ul li a:hover{
     }
 
     .btn2{
-        margin-left:85px;
+        
     }
   
         
@@ -596,7 +602,7 @@ header nav ul li a:hover{
     }
 
     .btn2{
-        margin-left:30px;
+        
     }
        
         
