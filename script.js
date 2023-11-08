@@ -4,6 +4,9 @@ const nav = document.querySelector(".nav2");
 // console.log(nav);
 const header = document.querySelector("header");
 
+var scroolTopValue = 400;
+
+nav.scrollTop = scroolTopValue;
 
 bar.addEventListener("click", function() {
     // console.log('click');
@@ -12,6 +15,8 @@ bar.addEventListener("click", function() {
     header.classList.toggle("active");
 
 });
+
+
 // console.log(header);
 
 window.addEventListener("scroll", function() {

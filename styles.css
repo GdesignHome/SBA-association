@@ -346,6 +346,9 @@ header nav ul li a:hover{
         left: 0;
     
     }
+    .nav2.scroll {
+
+    }
 
     .nav2 {
         font-family: "cabinet";
@@ -365,9 +368,7 @@ header nav ul li a:hover{
         z-index: 98;
         opacity: 0;
         display: initial;
-        
-
-        
+         
     }
     
     .nav2 a {
@@ -463,6 +464,14 @@ header nav ul li a:hover{
         font-size: 18px;
         transition: 0.25s;
     }
+
+    .btn button{
+        font-size: 15px;
+        padding: 12px ;
+        margin-left: 14px;
+       
+        
+    }
 }
 
 
@@ -483,7 +492,7 @@ header nav ul li a:hover{
     }
 
       .heroContainer .left h1{
-        font-size: 16px;
+        font-size: 19px;
         text-align: center;  
 
     }
@@ -510,7 +519,7 @@ header nav ul li a:hover{
     .btn2 {
         display: inline-block;
         margin-top: 120px;
-        margin-left: 150px;
+        margin-left: 100px;
         
     }
     .btn2 button {
@@ -535,10 +544,10 @@ header nav ul li a:hover{
 
     
 }
-@media (max-width:390px){
+@media (max-width:400px){
 
     .heroContainer .right img{  
-        height: 300px;
+        height: 350px;
         transition: 0.25s;
 
     }
@@ -548,20 +557,19 @@ header nav ul li a:hover{
         transition: 0.25s;
     }
 
-    .btn  {
-        top: 270px;
-        right: 50px;
-       
-        
-        
+    .btn2{
+        margin-left:85px;
     }
+  
+        
+        
 
 
 }
 
-@media (max-width:284px){
+@media (max-width:300px){
     .heroContainer .right img{  
-        height: 230px;
+        height: 330px;
         transition: 0.25s;
 
     }
@@ -571,15 +579,15 @@ header nav ul li a:hover{
         transition: 0.25s;
     }
 
-    .btn  {
-        top: 350px;
-        right: 50px;
+    .btn2{
+        margin-left:30px;
+    }
        
         
         
     }
 
-}
+
 
 
 
