@@ -495,10 +495,10 @@ header nav ul li a:hover{
 
     }
     .btn  {
-        position: fixed;
-        bottom: 170px;
+        position: relative;
+        top: 500px;
         width: 100%;
-        right: 70px;
+        right: 50px;
         
         
     }
@@ -527,7 +527,7 @@ header nav ul li a:hover{
     }
 
     .btn  {
-        bottom: 270px;
+        top: 270px;
         right: 50px;
        
         
@@ -550,7 +550,7 @@ header nav ul li a:hover{
     }
 
     .btn  {
-        bottom: 350px;
+        top: 350px;
         right: 50px;
        
         
