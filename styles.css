@@ -22,6 +22,21 @@ body {
     font-size: 19px;
     transition: 0.25s;
 }
+body::-webkit-scrollbar{
+    background: rgb(148, 141, 141);
+    width: 8px;
+   
+ 
+}
+        ::-webkit-scrollbar-thumb{
+            background-color: rgb(255, 141, 100);
+            border-radius: 40px;
+            
+        }
+
+
+
+
 main {
     width: 100%;
     max-width: 90%;
@@ -56,6 +71,10 @@ header .logo{
     padding: 10px;
     z-index: 99;
     
+}
+
+.no-select {
+    user-select: none;
 }
 header .logo a{
     color: black;
@@ -146,7 +165,7 @@ header nav ul li a:hover{
 
 .barmenu.active::before {
     transform: rotate(-45deg) translate(-6px, 6px);
-    background-color: black;
+    background-color: rgb(245, 35, 98);
 }
 .barmenu.active::after {
     transform: rotate(45deg) translate(-7px, -6px);
@@ -481,6 +500,7 @@ header nav ul li a:hover{
         display: block;
         color: rgb(255, 255, 255);
         background-color: #ed8059;
+        border-radius: 0 30px 30px 30px;
         padding: 15px;
         width:100%;
         max-width:250px;

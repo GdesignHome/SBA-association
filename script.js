@@ -17,7 +17,6 @@ bar.addEventListener("click", function() {
 });
 
 
-// console.log(header);
 
 window.addEventListener("scroll", function() {
     // console.log('scroll');
@@ -30,3 +29,8 @@ window.addEventListener("scroll", function() {
 
 })
 
+
+// console.log(homeImg);
+document.oncontextmenu = function(){
+    return false;
+}
