@@ -459,6 +459,7 @@ header nav ul li a:hover{
         }
         .barmenu{
         display: inline-block;
+        cursor: pointer;
         z-index: 99;
         
     }
