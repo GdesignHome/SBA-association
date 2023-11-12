@@ -591,11 +591,10 @@ header.active {
     display: initial;
      
 }
-
 .nav2 a {
     display: block;
     color: rgb(255, 255, 255);
-    background-color: #ed8059;
+    background-color:#d26942de;
     border-radius: 0 30px 30px 30px;
     padding: 15px;
     width:100%;
@@ -605,9 +604,11 @@ header.active {
 }
 
 .nav2 a:hover {
-    background-color: #fd7f50;
+    background-color: #ff723ede;
 }
 }
+
+
 
 
 /* xs */
@@ -796,6 +797,7 @@ header.active {
     background-blend-mode: multiply;
     min-height: 100vh;
     color: white;
+    padding-bottom: 30px;
 
 }
 

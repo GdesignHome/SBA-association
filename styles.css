@@ -583,7 +583,7 @@ header.active {
     top: 0;
     margin: 0 auto;
     text-align: center;
-    padding-top:170px;
+    padding-top:120px;
     transition: 0.4s;
     z-index: 98;
     opacity: 0;
@@ -594,7 +594,7 @@ header.active {
 .nav2 a {
     display: block;
     color: rgb(255, 255, 255);
-    background-color: #ed8059;
+    background-color:#d26942de;
     border-radius: 0 30px 30px 30px;
     padding: 15px;
     width:100%;
@@ -604,7 +604,7 @@ header.active {
 }
 
 .nav2 a:hover {
-    background-color: #fd7f50;
+    background-color: #ff723ede;
 }
 }
 
