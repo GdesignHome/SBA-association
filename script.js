@@ -20,6 +20,7 @@ bar.addEventListener("click", function() {
 
 
 
+
 window.addEventListener("scroll", function() {
     // console.log('scroll');
     if (window.scrollY > 0) {
@@ -51,6 +52,10 @@ const contact2= document.querySelector(".nav-link1");
         footer.classList.toggle("active")
         
     });
+
+    
+    
+
 
     
 

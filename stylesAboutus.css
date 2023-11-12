@@ -733,18 +733,30 @@ header.active {
         font-size: 8px;
         
     }
+
+    .nav2 {
+        font-size: 16px;
+        padding-top: 100px;
+    }
+    .nav2 a {
+        max-width:180px;
 }
-@media (max-width:300px){
+}
+@media (max-width:320px){
     .heroContainer .right img{  
         height: 330px;
         transition: 0.25s;
 
     }
-   
-       
-       
-        
+    .nav2 {
+        font-size: 14px;
+        padding-top: 80px;
     }
+    .nav2 a {
+        max-width:150px;
+    
+   
+
 
     header .logo {
         font-size: 10px;
@@ -759,6 +771,10 @@ header.active {
             }
     }
 
+
+
+
+}
 
 
 
