@@ -67,6 +67,13 @@ header {
     align-items: center;
 
 }
+
+header.active {
+    max-width: 100%;
+    background-color: white !important;
+  
+}
+
 header .logo{
     font-family: "ruth";
     font-size:  1.5rem!important;
@@ -558,9 +565,9 @@ label{
     
 }
 
-header.active {
+/* header.active {
     background-color: transparent !important;
-}
+} */
 
 
 .nav2.active {
