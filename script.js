@@ -13,6 +13,7 @@ bar.addEventListener("click", function() {
     bar.classList.toggle("active");
     nav.classList.toggle("active");
     header.classList.toggle("active");
+    footer.classList.remove("active")
 
 });
 
@@ -22,15 +23,50 @@ window.addEventListener("scroll", function() {
     // console.log('scroll');
     if (window.scrollY > 0) {
         header.style.background = "white";
+        header.classList.add("active")
     }
     else {
         header.style.background = "transparent";
+        header.classList.remove("active");
     }
 
 })
 
+const footer= document.querySelector(".footerContent");
+// console.log(footer);
+const foot = document.querySelector("footer");
+const contact= document.querySelector(".nav-link5");
+const contact2= document.querySelector(".nav-link1");
+// console.log(contact);
 
-// console.log(homeImg);
-document.oncontextmenu = function(){
-    return false;
-}
+    contact.addEventListener("click",function(){
+        footer.classList.toggle("active")
+        
+    })
+    contact2.addEventListener("click",function(){
+        footer.classList.toggle("active")
+        
+    })
+
+    
+
+
+
+
+
+
+// document.oncontextmenu = function(){
+//     return false;
+// }
+
+function adjustBackgroundSize() {
+    const body = document.body;
+    const windowHeight = window.innerHeight;
+    body.style.height = windowHeight + 'px';
+  }
+
+  // Appeler la fonction initiale
+  adjustBackgroundSize();
+
+  // Ajouter un écouteur d'événement de redimensionnement pour ajuster la taille lorsque la fenêtre est redimensionnée
+  window.addEventListener('resize', adjustBackgroundSize);
