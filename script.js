@@ -1,3 +1,4 @@
+
 const bar = document.querySelector(".barmenu");
 // console.log(bar);
 const nav = document.querySelector(".nav2");
@@ -36,17 +37,20 @@ const footer= document.querySelector(".footerContent");
 // console.log(footer);
 const foot = document.querySelector("footer");
 const contact= document.querySelector(".nav-link5");
+
 const contact2= document.querySelector(".nav-link1");
 // console.log(contact);
 
     contact.addEventListener("click",function(){
+        console.log('click');
         footer.classList.toggle("active")
         
-    })
+    });
     contact2.addEventListener("click",function(){
+        console.log('click2');
         footer.classList.toggle("active")
         
-    })
+    });
 
     
 
