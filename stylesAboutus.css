@@ -824,13 +824,13 @@ header.active {
 .header h1::before{
     content: "";
     padding: 10px;
-    border: 6px solid rgb(255, 141, 100);
+    border: 6px solid #ffbe82;
     border-radius: 30px;
    
 }
 .header p::after{
     content: "";
-    border: 6px solid rgb(255, 141, 100);
+    border: 6px solid #ffbe82;
     position: relative;
     padding: 6px;
     left:8px;
@@ -851,11 +851,11 @@ header.active {
 
 .header .w {
     font-size: 3rem;
-    color: rgb(20, 172, 231);
+    color: rgb(255, 255, 255);
 }
 .header .a {
     font-size: 3rem;
-    color: rgb(245, 35, 98);
+    color: rgb(255, 255, 255);
 }
 
 
