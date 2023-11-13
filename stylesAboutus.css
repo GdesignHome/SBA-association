@@ -702,7 +702,9 @@ label{
     
     } 
 
-   
+    header .logo img {
+        height: 55px;
+    }
 
     
 }
