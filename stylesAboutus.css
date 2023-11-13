@@ -596,7 +596,7 @@ label{
 .nav2 a {
     display: block;
     color: rgb(255, 255, 255);
-    background-color:#ffbe82;
+    background-color:#000000;
     border-radius: 0 30px 30px 30px;
     padding: 15px;
     width:100%;
@@ -606,7 +606,7 @@ label{
 }
 
 .nav2 a:hover {
-    background-color: black;
+    background-color: #ffbe82;
 }
 }
 
