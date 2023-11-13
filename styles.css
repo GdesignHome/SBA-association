@@ -454,6 +454,7 @@ label{
         display: flex;
         flex-direction: column;
         transition: 0.25s;
+        gap: 10px;
     }
 }
 @media (max-width:1024px){
