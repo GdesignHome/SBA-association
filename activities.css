@@ -1174,6 +1174,17 @@ h2{
     color: rgb(255, 141, 100);
 }
 
+.video {
+    /* text-align: center; */
+    margin-bottom: 30px;
+   
+   
+}
+
+iframe{
+    border-radius: 15px;
+}
+
 /* RESPONSIVE ACTIVITIES -----------------------------------------------------------------*/
 
 /* 2xl */
@@ -1254,6 +1265,9 @@ h2{
     .main4 .imageDiapo{
         scale: 0.8;
     }
+    .video {
+        scale: 0.9;
+    }
 }
 /* sm */
 @media (max-width:640px){
@@ -1266,6 +1280,11 @@ h2{
 
     .main4 .main4Content{
         gap: 0;
+    }
+    .video {
+        position: relative;
+        right: 70px;
+        scale: 0.7;
     }
 }
 /* xm */
@@ -1291,6 +1310,11 @@ h2{
         width: 100%;
      
     }
+    .video {
+        position: relative;
+        right: 70px;
+        scale: 0.5;
+    }
 }
 @media (max-width:312px){
     .main4 .imageDiapo{
@@ -1298,5 +1322,10 @@ h2{
     }
     .main4 h1{
         font-size: 1.6rem;
+    }
+    .video {
+        position: relative;
+        right: 70px;
+        scale: 0.39;
     }
 }
