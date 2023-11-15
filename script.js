@@ -72,23 +72,6 @@ const contact2= document.querySelector(".nav-link1");
 
 // ------------------------------------------------------------
 
-// const arrow = document.querySelector('.arrow');
-
-// arrow.addEventListener('click', function(){
-//     window.scrollTo({
-//         top:0,
-//         behavior:"smooth"
-//     })
-   
-// })
-
-window.addEventListener("scroll", function(){
-    if (window.scrollY>200){
-        arrow.style.display="block";
-    } else {
-        arrow.style.display = "none"
-    }
-})
 
 
 
@@ -113,3 +96,23 @@ function showSlides() {
 
 // Initial call to start the slideshow
 showSlides();
+
+
+
+const arrow = document.querySelector('.arrow');
+
+arrow.addEventListener('click', function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+   
+})
+
+window.addEventListener("scroll", function(){
+    if (window.scrollY>200){
+        arrow.style.display="block";
+    } else {
+        arrow.style.display = "none"
+    }
+})
