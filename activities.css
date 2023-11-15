@@ -26,6 +26,7 @@ body {
     min-height: 110vh;
     font-size: 19px;
     transition: 0.25s;
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar{
     background: rgb(148, 141, 141);
