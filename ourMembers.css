@@ -977,6 +977,8 @@ header.active {
     align-items: center;
     gap: 60px;
     margin: 0 auto;
+    padding: 30px 0;
+    
    
 
 }
@@ -1005,6 +1007,7 @@ margin-bottom: 10px;
     padding: 20px;
     border-radius: 10px;
     transition: 0.25s;
+    margin-bottom: 30px;
 }
 
 .main3 .gallery::after {
@@ -1022,6 +1025,7 @@ margin-bottom: 10px;
     width: 150px;
     border-radius: 50%;
     object-fit:cover;   
+    
 
 }
 
