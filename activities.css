@@ -1125,6 +1125,7 @@ margin-bottom: 10px;
     padding-top:100px;
     background-color: rgb(0, 0, 0);
     font-family: "cabinet";
+    overflow-x: hidden;
 }
 
 .main4 h1 {
@@ -1183,8 +1184,8 @@ margin-bottom: 10px;
 
 .main4 .main4Content .imageDiapo img{
     border-radius: 15px;
-    height: 600px;
-    width: 600px;
+    max-height: 600px;
+    max-width: 600px;
     object-fit: cover;
     transition: 0.25s;
 }
