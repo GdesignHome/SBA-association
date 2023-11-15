@@ -55,6 +55,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0;
     margin: auto;
     position: sticky ;
     top: 0;
@@ -64,34 +65,32 @@ header {
 header {
     display: flex;
     align-items: center;
-   
-}
 
-header.active {
-    max-width: 100%;
-    background-color: white !important;
-  
 }
-
 header .logo{
     font-family: "ruth";
+    font-size: 1.2rem !important;
     background-color: white;
-    margin-left: 30px;
+    border-radius: 0 40px 40px 40px;
+    padding: 10px;
     z-index: 99;
     
-}
-header .logo img{
-    height: 80px;
-    margin-top: 30px;
 }
 
 .no-select {
     user-select: none;
 }
-header .logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header .logo a{
+    color: black;
+}
+header .logo .red{
+    color: rgb(245, 35, 98);
+}
+header .logo .cyan{
+    color: rgb(20, 172, 231);
+}
+header .logo .orange{
+    color: rgb(255, 141, 100);
 }
 
 header nav {
@@ -108,11 +107,11 @@ header .nav-link{
     transition: 0.25s ease;
 }
 header .nav-link:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 141, 100);
 }
 
 header .first{
-   background-color: #ffbe82;
+   background-color: rgb(255, 141, 100);
    color: white;
 }
 header nav ul{
@@ -142,7 +141,7 @@ header nav ul li a:hover{
     display: block;
     height: 3px;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(245, 35, 98);
     border-radius: 2px;
     margin-bottom: 6px;
     transition: 0.4s;
@@ -152,7 +151,7 @@ header nav ul li a:hover{
     display: block;
     height: 3px;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 141, 100);
     border-radius: 2px;
     /* margin-top: 6px; */
     transition: 0.4s;
@@ -161,7 +160,7 @@ header nav ul li a:hover{
     display: block;
     height: 3px;
     width: 100%;
-    background-color: #ffbe82;
+    background-color: rgb(20, 172, 231);
     border-radius: 2px;
     margin-bottom: 6px;
     transition: 0.4s;
@@ -171,11 +170,11 @@ header nav ul li a:hover{
 
 .barmenu.active::before {
     transform: rotate(-45deg) translate(-6px, 6px);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(245, 35, 98);
 }
 .barmenu.active::after {
     transform: rotate(45deg) translate(-7px, -6px);
-    background-color: #ffbe82;
+    background-color: rgb(20, 172, 231)
 }
 
 .barmenu.active .bar {
@@ -201,7 +200,7 @@ header nav ul li a:hover{
 
 .heroContainer .left h1 {
     font-size: 4rem;
-    background: -webkit-linear-gradient(45deg, #ffbe82 0%,#ffbe82 10%,rgb(0, 0, 0)80%);
+    background: -webkit-linear-gradient(45deg, rgb(245, 35, 98)0%, rgb(20, 172, 231)10%,rgb(255, 141, 100)80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
@@ -236,7 +235,7 @@ header nav ul li a:hover{
     font-size: 20px;
     padding: 12px 30px;
     border-radius: 40px;
-    background-color: rgba(0, 0, 0, 0.706);
+    background-color: rgba(20, 171, 231, 0.706);
     border: none;
     color: white;
     transition: 0.25s;
@@ -244,7 +243,7 @@ header nav ul li a:hover{
 }
 
 .btn button:hover {
-    background-color: #ffbe82;
+    background-color: rgb(255, 141, 100);
     scale:1.2;
 
 } 
@@ -276,7 +275,7 @@ footer {
 
 }
 .footerContent {
-    background-color:  rgb(0, 0, 0);
+    background-color:  rgb(20, 172, 231);
     width: 100%;
   height: 0;
     margin: 0 auto;
@@ -311,10 +310,10 @@ label{
 }
 
 .email, #phone, #facebook, #youtube, #titok {
-    color: #ffbe82;
+    color: rgb(245, 35, 98);
 }
 .stic {
-    border-left: 6px solid #ffbe82;
+    border-left: 6px solid  rgb(255, 141, 100);
     border-radius: 7px;
   
 }
@@ -338,7 +337,7 @@ label{
         transition: 0.25s;
        
     }
-    
+
     
     
     .heroContainer .right img {
@@ -380,7 +379,7 @@ label{
 }
 
 /* xl */
-@media (max-width:1290px){
+@media (max-width:1280px){
     header nav ul li{
         padding: 0 2px;
         transition: 0.25s;
@@ -453,8 +452,8 @@ label{
     header {
         display: flex;
         flex-direction: column;
+        gap: 15px;
         transition: 0.25s;
-        gap: 10px;
     }
 }
 @media (max-width:1024px){
@@ -560,9 +559,9 @@ label{
     
 }
 
-/* header.active {
+header.active {
     background-color: transparent !important;
-} */
+}
 
 
 .nav2.active {
@@ -576,7 +575,7 @@ label{
     font-family: "cabinet";
     font-size: 19px;
     display: block;
-    background-color: #ffffff;
+    background-color: #ff8d64de;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -585,18 +584,17 @@ label{
     top: 0;
     margin: 0 auto;
     text-align: center;
-    padding-top:150px;
+    padding-top:170px;
     transition: 0.4s;
     z-index: 98;
     opacity: 0;
     display: initial;
      
 }
-
 .nav2 a {
     display: block;
     color: rgb(255, 255, 255);
-    background-color:#000000;
+    background-color:#d26942de;
     border-radius: 0 30px 30px 30px;
     padding: 15px;
     width:100%;
@@ -606,9 +604,11 @@ label{
 }
 
 .nav2 a:hover {
-    background-color: #ffbe82;
+    background-color: #ff723ede;
 }
 }
+
+
 
 
 /* xs */
@@ -689,7 +689,7 @@ label{
         font-size: 16px;
         padding: 10px 30px;
         border-radius: 40px;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(20, 172, 231);
         border: none;
         color: white;
         transition: 0.25s;
@@ -702,9 +702,7 @@ label{
     
     } 
 
-    header .logo img {
-        height: 55px;
-    }
+   
 
     
 }
@@ -739,8 +737,7 @@ label{
 
     .nav2 {
         font-size: 16px;
-        padding-top: 130px;
-       
+        padding-top: 100px;
     }
     .nav2 a {
         max-width:180px;
@@ -828,13 +825,13 @@ header.active {
 .header h1::before{
     content: "";
     padding: 10px;
-    border: 6px solid #ffbe82;
+    border: 6px solid rgb(255, 141, 100);
     border-radius: 30px;
    
 }
 .header p::after{
     content: "";
-    border: 6px solid #ffbe82;
+    border: 6px solid rgb(255, 141, 100);
     position: relative;
     padding: 6px;
     left:8px;
@@ -855,11 +852,11 @@ header.active {
 
 .header .w {
     font-size: 3rem;
-    color: rgb(255, 255, 255);
+    color: rgb(20, 172, 231);
 }
 .header .a {
     font-size: 3rem;
-    color: rgb(255, 255, 255);
+    color: rgb(245, 35, 98);
 }
 
 
