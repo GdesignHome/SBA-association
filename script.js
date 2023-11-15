@@ -72,20 +72,44 @@ const contact2= document.querySelector(".nav-link1");
 
 // ------------------------------------------------------------
 
-const arrow = document.querySelector('.arrow');
+// const arrow = document.querySelector('.arrow');
 
-arrow.addEventListener('click', function(){
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    })
+// arrow.addEventListener('click', function(){
+//     window.scrollTo({
+//         top:0,
+//         behavior:"smooth"
+//     })
    
-})
+// })
 
-window.addEventListener("scroll", function(){
-    if (window.scrollY>200){
-        arrow.style.display="block";
-    } else {
-        arrow.style.display = "none"
-    }
-})
+// window.addEventListener("scroll", function(){
+//     if (window.scrollY>200){
+//         arrow.style.display="block";
+//     } else {
+//         arrow.style.display = "none"
+//     }
+// })
+
+
+
+let slideIndex = 0;
+
+function showSlides() {
+  const slides = document.querySelectorAll(".mySlides");
+
+  slides.forEach((slide) => {
+    slide.style.display = "none";
+  });
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 4000); // Change slide every 2 seconds (adjust as needed)
+}
+
+// Initial call to start the slideshow
+showSlides();

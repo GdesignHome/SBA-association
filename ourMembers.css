@@ -957,6 +957,14 @@ header.active {
     padding-top: 40px;
 
 }
+
+.main3 h1::before{
+    content: "";
+    padding: 10px;
+    border: 6px solid rgb(255, 141, 100);
+    border-radius: 30px;
+   
+}
   
 .gallery{
     width: 100%;
@@ -1118,3 +1126,5 @@ margin-bottom: 10px;
 @media (max-width:475px){
 
 }
+
+
