@@ -1249,6 +1249,39 @@ margin-bottom: 10px;
     
 }
 
+.main4 .bottom {
+    background-color: rgb(105, 100, 100);
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    color: white;
+}
+.main4 .bottom h2{
+    margin-bottom:40px ;
+}
+.main4 .bottom p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+
+}
+.main4 .bottom h2::before{
+    content: "";
+    padding: 5px;
+    border: 6px solid rgb(255, 141, 100);
+    border-radius: 50px;
+
+}
+.bot{
+    margin-bottom: 0 !important;
+
+}
+.bt {
+    color: rgb(255, 141, 100);
+}
+
 /* RESPONSIVE ACTIVITIES -----------------------------------------------------------------*/
 
 /* 2xl */
@@ -1269,9 +1302,12 @@ margin-bottom: 10px;
     .main4 h3{
         font-size: 16px;
     }
-    .main4 .main4Content p{
-        font-size: 19px !important;
+    .main4 .bottom p{
+        font-size: 19px;
      
+    }
+    .main4 .bottom h2 {
+        font-size: 20px;
     }
   
 }
@@ -1304,6 +1340,16 @@ margin-bottom: 10px;
     .main4 .main4Content{
         gap: 10px;
     }
+
+    .main4 .bottom {
+        text-align: center;
+    }
+    .main4 .bottom p{
+        text-align: justify;
+    }
+     
+   
+    
 
 }
 
