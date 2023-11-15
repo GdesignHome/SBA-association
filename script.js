@@ -82,13 +82,13 @@ const contact2= document.querySelector(".nav-link1");
    
 // })
 
-// window.addEventListener("scroll", function(){
-//     if (window.scrollY>200){
-//         arrow.style.display="block";
-//     } else {
-//         arrow.style.display = "none"
-//     }
-// })
+window.addEventListener("scroll", function(){
+    if (window.scrollY>200){
+        arrow.style.display="block";
+    } else {
+        arrow.style.display = "none"
+    }
+})
 
 
 
