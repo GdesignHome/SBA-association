@@ -1129,7 +1129,9 @@ margin-bottom: 10px;
     font-family: "cabinet";
     overflow-x: hidden;
 }
-
+h2{
+    line-height: 40px;
+}
 .main4 h1 {
     color: rgb(255, 141, 100);
     text-align: center;
