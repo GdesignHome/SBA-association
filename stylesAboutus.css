@@ -60,6 +60,7 @@ header {
     position: sticky ;
     top: 0;
     z-index: 99;
+    transition: 0.25s;
    
 }
 header {
@@ -794,7 +795,7 @@ header.active {
     background-repeat: no-repeat;
     background-color:rgba(0, 0, 0, 0.86) ;
     background-blend-mode: multiply;
-    min-height: 100vh;
+    min-height: 100%;
     color: white;
     padding-bottom: 30px;
 

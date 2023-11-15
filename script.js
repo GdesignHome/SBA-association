@@ -28,7 +28,6 @@ window.addEventListener("scroll", function() {
         header.classList.add("active")
     }
     else {
-        header.style.background = "transparent";
         header.classList.remove("active");
     }
 
@@ -68,14 +67,25 @@ const contact2= document.querySelector(".nav-link1");
 //     return false;
 // }
 
-function adjustBackgroundSize() {
-    const body = document.body;
-    const windowHeight = window.innerHeight;
-    body.style.height = windowHeight + 'px';
-  }
 
-  // Appeler la fonction initiale
-  adjustBackgroundSize();
 
-  // Ajouter un écouteur d'événement de redimensionnement pour ajuster la taille lorsque la fenêtre est redimensionnée
-  window.addEventListener('resize', adjustBackgroundSize);
+
+// ------------------------------------------------------------
+
+const arrow = document.querySelector('.arrow');
+
+arrow.addEventListener('click', function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+   
+})
+
+window.addEventListener("scroll", function(){
+    if (window.scrollY>200){
+        arrow.style.display="block";
+    } else {
+        arrow.style.display = "none"
+    }
+})

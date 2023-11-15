@@ -51,15 +51,20 @@ main {
 
 header {
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
     margin: auto;
-    position: sticky ;
-    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed ;
+    top:0;
     z-index: 99;
+    transition: 0.25s;
+    background-color: white;
+   
    
 }
 header {
@@ -558,9 +563,7 @@ label{
     
 }
 
-header.active {
-    background-color: transparent !important;
-}
+
 
 
 .nav2.active {
@@ -802,6 +805,7 @@ header.active {
 
 header.active {
     max-width: 100%;
+    padding: 10px 50px;
     background-color: white !important;
     
   
@@ -931,4 +935,186 @@ header.active {
     .header h1 {
         font-size: 2.5rem;
     }
+}
+
+/* OUR MEMBERS-----------------------------------------------------------------------------*/
+
+
+.main3 {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    font-family: "cabinet";
+    padding-top: 100px;
+    
+}
+
+.main3 h1 {
+    text-align: center;
+    font-size: 3em;
+    color:  rgb(255, 141, 100);
+    padding-top: 40px;
+
+}
+  
+.gallery{
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 0 auto;
+   
+
+}
+
+
+
+
+h3 {
+    font-size: 1.1rem;
+}
+.main3 .text {
+    text-align: center;
+    height: 120px;
+
+}
+.main3 .text h3{
+margin-bottom: 10px;
+}
+.main3 .box {
+    display: grid;
+    max-width: 300px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.main3 .gallery::after {
+    content: "";
+    width: 300px;
+   
+}
+
+.main3 .vi {
+    background-color: transparent;
+}
+
+.main3 .box img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit:cover;   
+
+}
+
+.main3 .box h3 {
+    text-transform: uppercase;
+}
+.main3 .box p {
+    font-style: italic;
+    
+}
+.fa-brands {
+    margin:8px;
+    color:  rgb(245, 35, 98);
+}
+
+.arrow {
+    position: fixed;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(255, 255, 255, 0.361);
+    right: 22px;
+    bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+   display: none;
+    
+  
+ 
+}
+.fa-arrow-up{
+    color: rgb(245, 35, 98);
+    scale: 1.5;
+}
+
+
+
+
+/*RESPONSIVE PAGE OUR MEMBERS-------------------------------------------------------*/
+
+/* 2xl */
+
+@media (max-width:1536px){
+
+}
+/* xl */
+
+@media (max-width:1280px){
+        .main3 h1 {
+            font-size: 2.5rem;
+        }
+        .main3 .box{
+            scale: 0.9;
+        }
+        .gallery{
+            gap: 20px;
+        }
+}
+/* lg */
+
+@media (max-width:1024px){
+    .main3 .box{
+        scale: 0.8;
+    
+
+    }
+    .gallery{
+        gap: 0;
+    }
+    .main3 .text{
+        height: 50px;
+        margin-bottom: 10px;
+         
+     }
+}
+/* md */
+
+@media (max-width:897px){
+    .main3 .box{
+        scale: 0.78;
+        height: 400px;
+    }
+    .main3 .text{
+       height: 50px;
+       margin-bottom: 10px;
+        
+    }
+}
+/* sm */
+
+@media (max-width:640px){
+
+    .main3 h1 {
+        font-size: 2rem;
+    }
+
+}
+/* xm */
+
+@media (max-width:475px){
+
 }
