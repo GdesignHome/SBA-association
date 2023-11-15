@@ -1318,7 +1318,11 @@ margin-bottom: 10px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        /* text-align: center; */
+        
+    }
+    .main4 .main4Content h2{
+      margin-right: 0!important;
     }
     .main4 h1{
         font-size: 2.5rem;
@@ -1342,7 +1346,7 @@ margin-bottom: 10px;
     }
 
     .main4 .bottom {
-        text-align: center;
+        /* text-align: center; */
     }
     .main4 .bottom p{
         text-align: justify;
