@@ -160,7 +160,7 @@ header nav ul li a:hover{
     width: 100%;
     background-color: rgb(255, 141, 100);
     border-radius: 2px;
-    /* margin-top: 6px; */
+    margin-top: 6px;
     transition: 0.4s;
 }
 .barmenu .bar {
@@ -169,7 +169,6 @@ header nav ul li a:hover{
     width: 100%;
     background-color: rgb(20, 172, 231);
     border-radius: 2px;
-    margin-bottom: 6px;
     transition: 0.4s;
     margin-left: 10px;
     z-index:99;
@@ -282,7 +281,7 @@ footer {
 
 }
 .footerContent {
-    background-color:  rgb(20, 172, 231);
+    background-color:  rgb(0, 0, 0);
     width: 100%;
   height: 0;
     margin: 0 auto;
@@ -581,7 +580,7 @@ label{
     font-family: "cabinet";
     font-size: 19px;
     display: block;
-    background-color: #ff8d64de;
+    background-color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
     position: fixed;
@@ -590,7 +589,7 @@ label{
     top: 0;
     margin: 0 auto;
     text-align: center;
-    padding-top:120px;
+    padding-top:90px !important;
     transition: 0.4s;
     z-index: 98;
     opacity: 0;
@@ -611,7 +610,7 @@ label{
 }
 
 .nav2 a:hover {
-    background-color: #ff723ede;
+    background-color:rgb(20, 172, 231);
 }
 }
 
