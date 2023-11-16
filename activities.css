@@ -1065,10 +1065,11 @@ h2{
     
 }
 
+
 .main4 .mySlides {
   
     max-width: 600px;
-    display: none;
+    /* display: none; */
 }
 
 .fade {
