@@ -1057,8 +1057,7 @@ h2{
 
 .main4 .main4Content .imageDiapo{
     display: flex;
-    max-width: 600px;
-    height: 600px;
+    width: 900px;
     position: relative;
     transition: 0.25s;
     top: 0;
@@ -1068,7 +1067,7 @@ h2{
 .main4 .mySlides {
   
     max-width: 600px;
-    /* display: none; */
+    display: none;
 }
 
 .fade {
@@ -1076,10 +1075,11 @@ h2{
 }
 
 .main4 .main4Content .imageDiapo img{
-    border-radius: 15px;
-    max-height: 600px;
-    max-width: 600px;
+    border-radius: 10px;
+    width: 100%;
+    /* height: 300px; */
     object-fit: cover;
+    object-position: center;
     transition: 0.25s;
 }
 @keyframes fade {
@@ -1092,6 +1092,9 @@ h2{
 }
 
 
+.main4 .main4Content .left{
+    
+}
 .main4 .main4Content .left h2 {
     margin-bottom: 40px;
     
@@ -1176,8 +1179,9 @@ h2{
 }
 
 .video {
-    /* text-align: center; */
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
    
    
 }
@@ -1224,6 +1228,10 @@ iframe{
         justify-content: center;
         /* text-align: center; */
         
+    }
+    .main4 .imageDiapo{
+        display: flex;
+        justify-content: center;
     }
     .main4 .main4Content h2{
       margin-right: 0!important;
@@ -1283,15 +1291,13 @@ iframe{
         gap: 0;
     }
     .video {
-        position: relative;
-        right: 70px;
-        scale: 0.7;
+       
     }
 }
 /* xm */
 @media (max-width:475px){
     .main4 .imageDiapo{
-        scale: 0.5;
+        /* scale: 0.5; */
     }
     .main4 h1{
         font-size: 2rem;
@@ -1311,22 +1317,14 @@ iframe{
         width: 100%;
      
     }
-    .video {
-        position: relative;
-        right: 70px;
-        scale: 0.5;
-    }
+   
 }
 @media (max-width:312px){
     .main4 .imageDiapo{
-        scale: 0.4;
+        scale: 0.5;
     }
     .main4 h1{
         font-size: 1.6rem;
     }
-    .video {
-        position: relative;
-        right: 70px;
-        scale: 0.39;
-    }
+    
 }
