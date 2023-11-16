@@ -607,6 +607,7 @@ label{
     max-width:250px;
     margin-bottom: 50px !important;
     margin: 0 auto;
+    z-index: 98 ;
 }
 
 .nav2 a:hover {
