@@ -1201,7 +1201,7 @@ iframe{
 /* xl */
 @media (max-width:1280px){
     .main4 .imageDiapo{
-        scale: 0.9;
+        /* scale: 0.9; */
     }
     .main4 h1{
         font-size: 3rem;
@@ -1274,7 +1274,7 @@ iframe{
 /* md */
 @media (max-width:768px){
     .main4 .imageDiapo{
-        scale: 0.8;
+        /* scale: 0.8; */
     }
     .video {
         scale: 0.9;
@@ -1283,7 +1283,7 @@ iframe{
 /* sm */
 @media (max-width:640px){
     .main4 .imageDiapo{
-        scale: 0.7;
+        /* scale: 0.7; */
     }
     .main4 .left .m4 {
         padding: 0 30px;
@@ -1323,7 +1323,7 @@ iframe{
 }
 @media (max-width:312px){
     .main4 .imageDiapo{
-        scale: 0.5;
+        /* scale: 0.5; */
     }
     .main4 h1{
         font-size: 1.6rem;
