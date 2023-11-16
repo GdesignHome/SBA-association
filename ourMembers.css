@@ -1010,6 +1010,9 @@ margin-bottom: 10px;
     transition: 0.25s;
     margin: 30px;
 }
+.main3 .box:hover {
+   transform: translateY(-10px);
+}
 
 .main3 .gallery::after {
     content: "";
