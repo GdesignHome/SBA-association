@@ -1060,9 +1060,8 @@ h2{
     align-items: center;
     width: 100%;
     max-width: 100%;
-    position: relative;
     transition: 0.25s;
-    top: 0;
+
     
 }
 
