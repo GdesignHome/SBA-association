@@ -1009,6 +1009,32 @@ header.active {
     /* PAGE ACTIVITIES------------------------------------------------------------------ */
 
 }
+.headerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5px; */
+}
+h1, .target, .cursor{
+    display: inline-block;
+    
+    
+   
+}
+#target::before {
+    content: "";
+    padding: 0;
+    border: none;
+}
+.cursor {
+    display: flex;
+    position: relative;
+   padding: 25px;
+    border-left: 3px solid rgb(255, 141, 100);
+    align-self: flex-start;
+    top: 38px;
+    animation: fade 1s ease-in-out infinite;
+}
 .main4 {
     width: 100%;
     min-height: 100%;
@@ -1087,7 +1113,7 @@ h2{
 }
 @keyframes fade {
     from {
-        opacity: 0.4;
+        opacity: 0.3;
     }
     to {
         opacity: 1;

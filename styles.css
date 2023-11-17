@@ -259,6 +259,18 @@ header nav ul li a:hover{
 }
 
 
+#target {
+    font-family: 'ruth';
+    text-align: center;
+    background: -webkit-linear-gradient(45deg, rgb(245, 35, 98)0%, rgb(20, 172, 231)0%,rgb(255, 141, 100)80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 7px;
+ 
+
+
+  
+}
 
 
 footer {
