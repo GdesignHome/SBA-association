@@ -1,20 +1,28 @@
 let slideIndex = 0;
 
-function showSlides() {
-  const slides = document.querySelectorAll(".mySlides");
+function diapo (){
+  const mySlides = document.querySelectorAll(".mySlides");
+  mySlides.forEach(function(img,index){
+    if(index === slideIndex){
+      
+      img.style.display = "block";
 
-  slides.forEach((slide) => {
-    slide.style.display = "none";
+      
+
+    } else {
+     
+      img.style.display = "none";
+     
+
+      
+    }
   });
+    slideIndex++;
 
-  slideIndex++;
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 6000); 
-  
+    if(slideIndex >= mySlides.length){
+      slideIndex = 0;
+    }
+    setTimeout(diapo,7000)
 }
-showSlides();
+diapo();
+

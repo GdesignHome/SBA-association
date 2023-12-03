@@ -69,6 +69,8 @@ const contact2= document.querySelector(".nav-link1");
 
 
 
+const arrow = document.querySelector(".arrow");
+
 
 
 window.addEventListener("scroll", function(){
@@ -78,6 +80,15 @@ window.addEventListener("scroll", function(){
         arrow.style.display = "none"
     }
 })
+
+arrow.addEventListener("click", function(){
+    
+    window.scrollTo({
+        top : 0,
+        behavior : "smooth"
+    });
+})
+
 
 // ------------------------------------------------------------
 

@@ -1079,24 +1079,26 @@ h2{
 .main4 .mySlides {
   
     max-width: 600px;
-    /* display: none; */
+   
 }
 
 .fade {
-    animation: fade 6s ease infinite;
+    animation: fade 2s ;
+   
 }
+
 
 .main4 .main4Content .imageDiapo img{
     border-radius: 10px;
     width: 100%;
-    /* height: 300px; */
     object-fit: cover;
     object-position: center;
-    transition: 0.25s;
+    transition: 0.4s;
+
 }
 @keyframes fade {
     from {
-        opacity: 0.3;
+        opacity: 0;
     }
     to {
         opacity: 1;
@@ -1202,6 +1204,50 @@ iframe{
     border-radius: 15px;
 }
 
+
+.fa-brands {
+    margin:8px;
+    color:  rgb(245, 35, 98);
+}
+
+.arrow {
+    position: fixed;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(255, 255, 255, 0.361);
+    right: 22px;
+    bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+   display: none;
+    
+  
+ 
+}
+.fa-arrow-up{
+    color: rgb(245, 35, 98);
+    scale: 1.5;
+}
+
+
+.dance-activities {
+    display: flex;
+    justify-content: space-between;
+}
+.partyRight{
+  
+   
+}
+.partyRight img {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 /* RESPONSIVE ACTIVITIES -----------------------------------------------------------------*/
 
 /* 2xl */
@@ -1304,6 +1350,14 @@ iframe{
     }
     .video {
        
+    }
+    .dance-activities{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .dance-activities img {
+        margin-top: 30px;
     }
 }
 /* xm */
