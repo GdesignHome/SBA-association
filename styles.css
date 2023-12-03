@@ -6,6 +6,10 @@
     font-family: "ruth";
     src: url(./Assets/Fonts/RuthlessWreckin2.ttf);
 }
+@font-face {
+    font-family: "houston";
+    src: url(./Assets/Fonts/Houston\ Regular\ DEMO.otf);
+}
 
 * {
     margin:0;
@@ -260,13 +264,12 @@ header nav ul li a:hover{
 
 
 #target {
-    font-family: 'ruth';
-    text-align: center;
-    background: -webkit-linear-gradient(45deg, rgb(245, 35, 98)0%, rgb(20, 172, 231)0%,rgb(255, 141, 100)80%);
+    font-family: 'houston';
+    background: -webkit-linear-gradient(45deg, rgb(245, 35, 98)5%, rgb(20, 172, 231)70%,rgb(255, 141, 100)30%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 7px;
- 
+ text-transform: uppercase;
 
 
   
@@ -619,7 +622,7 @@ label{
     max-width:250px;
     margin-bottom: 50px !important;
     margin: 0 auto;
-    z-index: 98 ;
+    z-index: 99;
 }
 
 .nav2 a:hover {

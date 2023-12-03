@@ -108,9 +108,9 @@ const createLetter = function(){
             loop();
         }
          else if (letterIndex < array[wordIndex].length){
-            createLetter();
-            letterIndex++;
-            loop();
+             createLetter();
+             loop();
+             letterIndex++;
 
         } else { 
             wordIndex++;
