@@ -69,12 +69,14 @@ header {
 header {
     display: flex;
     align-items: center;
+    transition: 0.4s;
 
 }
 
 header.active {
     max-width: 100%;
     background-color: white !important;
+    transition: 0.4s;
   
 }
 
