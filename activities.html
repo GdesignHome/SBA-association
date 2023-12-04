@@ -11,14 +11,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   <title>Silence Breakers Academy</title>
 </head>
 
 <body>
   <header>
-    <div class="logo no-select">
+    <div class="logo">
       <a href="./index.html">
-        <p class="no-select">
+        <p class="">
           <font class="red">Silence </font>
           <font class="cyan">Breakers</font>
           <font class="orange">Academy</font>
@@ -217,7 +218,18 @@
       </div>
 
   </footer>
-
+  <script>
+     ScrollReveal({ 
+      reset: true ,
+      distance: "60px",
+      duration: 1500,
+      delay: 500
+    });
+    ScrollReveal().reveal('.no-select', { delay: 500 });
+    ScrollReveal().reveal('p', { delay: 450 ,origin:'left'});
+    ScrollReveal().reveal('.dance-activities ', { delay: 450 ,origin:'right'});
+    ScrollReveal().reveal('.dance-activities-one ', { delay: 450 ,origin:'right'});
+  </script>
   <script src="./script.js"></script>
   <script src="./gallery.js"></script>
 </body>
