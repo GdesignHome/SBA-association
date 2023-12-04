@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./fontawesome.css">
     <link rel="stylesheet" href="./fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Silence Breakers Academy</title>
   </head>
   <body>
@@ -83,6 +84,16 @@
             </div>
          
         </footer>
+        <script>
+            ScrollReveal({
+       reset: true,
+       distance: '60px',
+       duration: 1200,
+       delay: 500
+       });
+       ScrollReveal().reveal('h1', { delay: 500 , origin:'top'});
+       ScrollReveal().reveal('.headerContent', { delay: 500 , origin:'bottom'});
+        </script>
 
     <script src="./script.js"></script>
 
