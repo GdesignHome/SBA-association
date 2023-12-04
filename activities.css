@@ -7,7 +7,9 @@
     src: url(./Assets/Fonts/RuthlessWreckin2.ttf);
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin:0;
     padding: 0;
