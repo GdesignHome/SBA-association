@@ -1191,6 +1191,9 @@ h2{
 .bt {
     color: rgb(255, 141, 100);
 }
+.red{
+    color: rgb(255, 0, 85);
+}
 
 .video {
     display: flex;
